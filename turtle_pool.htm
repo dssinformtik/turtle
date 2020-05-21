@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>canvas Turtlegrafik by thk</title>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="turtle.css">
+<script type="text/javascript" src="turtle_p.js"></script>
+<!--[if IE]>
+    <script type="text/javascript" src="excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="canvas.text.js"></script>
+<script type="text/javascript" src="faces/sans_serif-normal-normal.js"></script>
+</head>
+<body bgcolor="#D8EDD0" onload="zeichne();">
+<h3>Turtlegrafik im Browser mit Maussteuerung</h3>
+<small>Version 0.3 by thk</small><br>
+
+<h4 style="color:red;font-size:20pt;">&nbsp; &nbsp;<><> Click mich !!! <><> </h4>
+
+<script type="text/javascript">
+if(IE) document.write("<font color='red'>In diesem Browser wird wird nur eine langsame Emulation der Grafik ausgef&uuml;hrt.</font><br><b>Tipp:</b> Benutze z. B. Firefox.");
+document.write("<form name='fk'>"+
+"<table border=1 bgcolor='#d0d0d0' width="+(Xw+3)+">"+
+"<tr><td><canvas id='c1' width="+(Xw+1)+" height="+(Yw+1)+">Dieser Browser kann die Grafik im Canvas-Objekt nicht darstellen. Benutze z. B. Firefox</canvas></td></tr>"+ 
+"<tr><td align='right'><input type='button' name='neu' value='neu laden' onclick='window.history.go(0);'>&nbsp;</td></tr>"+
+"<tr><td>"+anleitung+"</td></tr></table></form>");
+
+var canvas=document.getElementById("c1");
+canvas.onmousedown=function(e){
+	var	cx=mousePos(e).x,cy=mousePos(e).y;
+ meineFunktion(cx,cy);
+	}
+</script>
+
+<img id="sm" style="position:absolute;height:104px;"src="smilie.png" onclick="this.src='smilie_r.png';alert(SP[(LEV-1)%SP.length]+'\n Versuche es auf Level '+(++LEV));">
+
+<br /><br />
+
+</body>
+</html>

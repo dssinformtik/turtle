@@ -1,0 +1,8 @@
+body, html  {scrollbar-track-color:#10b7b7; scrollbar-face-color:#D0E0D0; scrollbar-highlight-color:#D7E7D7; scrollbar-3dlight-color:#E0F0E0; scrollbar-darkshadow-color:#404040; scrollbar-shadow-color:#606060; scrollbar-arrow-color:#B737B7; }
+h3 {font-family:Arial; font-size:12pt; color:#C03080; border:ridge #F040B0; padding:3px; background-color:#ECF0DF; cursor:s-resize;}
+em {color:#0000E0; font-style:normal;}
+a {color:#BC0900;}  
+a:visited {color:#6C0500;}
+a:hover {color:#CC0A00;}
+body,table {font-family:Arial, Helvetica; font-size:12pt;}
+input {color:#005000;font-size:11pt;background-color:#E6E9D8;}

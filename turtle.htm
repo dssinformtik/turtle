@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>canvas Turtlegrafik by thk</title>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="turtle.css">
+<script type="text/javascript" src="turtle.js"></script>
+<!--[if IE]>
+    <script type="text/javascript" src="excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="canvas.text.js"></script>
+<script type="text/javascript" src="faces/sans_serif-normal-normal.js"></script>
+</head>
+<body bgcolor="#D8EDD0" onload="zeichne();">
+<h3>Turtlegrafik im Browser</h3>
+<small>Version 0.4 by thk</small><br>
+<script type="text/javascript">
+if(IE) document.write("<font color='red'>In diesem Browser wird wird nur eine langsame Emulation der Grafik ausgef&uuml;hrt.</font><br><b>Tipp:</b> Benutze z. B. Firefox.");
+document.write("<form name='fk'>"+
+"<table border=1 bgcolor='#d0d0d0' width="+(Xw+3)+"><tr><td>"+
+"<canvas id='c1' width="+(Xw+1)+" height="+(Yw+1)+">Dieser Browser kann die Grafik im Canvas-Objekt nicht darstellen. Benutze z. B. Firefox</canvas>"+ 
+"</td></tr><tr><td> &nbsp; <input type='button' name='fkt1' value=' > ' onclick='xfkt1();'>&nbsp;"+"</td></tr>"+
+"</td></tr><tr><td align='right'><input type='button' name='neu' value='neu laden' onclick='window.history.go(0);'>&nbsp;</td></tr>"+
+"<tr><td>"+anleitung+
+"</td></tr></table></form>");
+</script>
+<h3>Dreiecksberechnungen</h3>
+<form name="F1">
+<table><tr>
+<td align="right">a: </td><td><input type="text" name="a" onfocus="this.select()" /></td><td align="right"> b: </td><td><input type="text" name="b" onfocus="this.select()" /></td><td align="right"> c: </td><td><input type="text" name="c" onfocus="this.select()" /></td>
+</tr><tr>
+<td>Alpha: </td><td><input type="text" name="al" onfocus="this.select()" /></td><td>&nbsp; Beta: </td><td><input type="text" name="be" onfocus="this.select()" /> </td><td>&nbsp; Gamma: </td><td><input type="text" name="ga" onfocus="this.select()" /></td><br /><br />
+</tr></table><br />
+Skalierung:  <input type="text" name="s" value="100" /> <input type="button" value="mach's" onclick="meineFunktion()" /> <input type="reset" value="l&ouml;schen" /> &nbsp; 
+Ergebnisse eintragen <input type="checkbox" name="erg" />
+</form>
+<div id="hs"> Höhen::<br>Fl&auml;che:</div>
+<br /><br />
+
+</body>
+</html>
